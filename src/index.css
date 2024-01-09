@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.PinkRose{
+  background-color: #FF1493;
+}
+
+body { overflow-x: hidden; }
