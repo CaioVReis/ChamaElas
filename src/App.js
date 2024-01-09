@@ -51,7 +51,7 @@ function App() {
      </div>
 
 
-    <div className='md:PinkRose PinkRose h-3/5 md:w-screen md:h-screen md:flex flex flex-col md:flex-row '>
+    <div className='md:PinkRose PinkRose h-full md:w-screen md:h-screen md:flex flex flex-col md:flex-row '>
         <div className='PinkRose  md:w-3/5 md:h-screen'>
 
        <p className="md:text-5xl text-white md:ml-5 md:mt-10 mt-2 italic font-bold text-center text-2xl  w-screen  h-10 md:block">Quer Conheçer A Nossa Historia?</p>
@@ -59,7 +59,7 @@ function App() {
             <ImgEqp url="file:///C:/Users/kaio%20vinicios/Desktop/Imagem%20do%20WhatsApp%20de%202023-12-22%20%C3%A0(s)%2014.34.10_d2be136f.jpg" />
           </div>   
         </div>
-           <div className="  mt-2  ml-1 text-sm md:block md:w-2/6 h-full  md:h-screen md:mt-9 md:ml-8 text-white md:text-lg  "><p className="md:mt-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis iaculis elit ac neque maximus elementum et vel urna.  Duis pellentesque eleifend libero sed ultricies. Nullam vel diam quam. Vivamus risus ex, pulvinar convallis eros at, aliquet accumsan libero.  Nam vehicula eu turpis eget laoreet. Quisque lobortis mauris posuere, consequat augue facilisis, eleifend sem. Maecenas id luctus nisl.  id ligula faucibus, a blandit ligula sollicitudin. Donec vestibulum felis magna, nec interdum odio ullamcorper non. Proin auctor, quam vel feugiat malesuada, turpis quam iaculis mauris, sed scelerisque ex massa sit amet libero. Donec volutpat a ipsum eu rhoncus. Praesent nisl orci, suscipit aliquet magna eget, ultricies fringilla erat.</p></div>
+           <div className="mt-2  ml-1 text-sm md:block md:w-2/6 h-screen  md:h-screen md:mt-9 md:ml-8 text-white md:text-lg  "><p className="md:mt-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis iaculis elit ac neque maximus elementum et vel urna.  Duis pellentesque eleifend libero sed ultricies. Nullam vel diam quam. Vivamus risus ex, pulvinar convallis eros at, aliquet accumsan libero.  Nam vehicula eu turpis eget laoreet. Quisque lobortis mauris posuere, consequat augue facilisis, eleifend sem. Maecenas id luctus nisl.  id ligula faucibus, a blandit ligula sollicitudin. Donec vestibulum felis magna, nec interdum odio ullamcorper non. Proin auctor, quam vel feugiat malesuada, turpis quam iaculis mauris, sed scelerisque ex massa sit amet libero. Donec volutpat a ipsum eu rhoncus. Praesent nisl orci, suscipit aliquet magna eget, ultricies fringilla erat.</p></div>
           
           
         </div>
