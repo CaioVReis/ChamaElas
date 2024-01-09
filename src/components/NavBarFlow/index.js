@@ -15,7 +15,7 @@ const NavBarFlow = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                 </svg>
             </a>
-            <a href="#"><p className="ml-52 text-center text-lg p-2 h-10 mt-2  bg-pink-300 rounded-md text-white">Seja Motorista</p></a>
+            <a href="#"><p className="ml-36 text-center text-lg p-2 h-10 mt-2  bg-pink-300 rounded-md text-white">Seja Motorista</p></a>
         </div>
         { isOpen  && (
             <div className=" md:w-full    w-full ml-8  PinkRose flex flex-col p-2 gap-5">
