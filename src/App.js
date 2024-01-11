@@ -12,7 +12,7 @@ import NavBarFlow from './components/NavBarFlow';
 function App() {
   return (
     <>
-    <div className='PinkRose w-screen border-2 border-pink-700  md:w-screen md:h-screen'> 
+    <div className='PinkRose w-screen   md:w-screen md:h-screen'> 
 
     <div>
       <Navbar/>
@@ -30,15 +30,15 @@ function App() {
       
     </div>
     
-    <div className='md:w-screen  h-screen'>
+    <div className='md:w-screen   h-screen'>
 
-     <div className='md:mt-10  mt-16 '>
-        <header className="text-center md:mx-auto mb-12 lg:px-20  ml-44 ">
-        <h2 className="-ml-52 md:-ml-16 md:text-2xl md:leading-normal md:mb-2 font-bold text-black">Atendimento Exclusivo!</h2>
-        < p className=" -ml-52 md:-ml-20 text-gray-500 leading-relaxed font-light text-xl md:mx-auto pb-2">Conheça Todos<br/>Nossos Atendimentos.!</p>
-      </header>
+     <div className='md:mt-10  mt-16  '>
+       
+        <h2 className="text-center font-bold">Atendimento Exclusivo!</h2>
+        < p className="text-center font-semibold">Conheça Todos<br/>Nossos Atendimentos.!</p>
+      
      </div>
-     <div className="flex flex-wrap w-screen   md:-mx-4 text-center">
+     <div className="flex flex-wrap w-screen mt-5 ml-1  md:-mx-4 text-center">
 
   
   <Cards tittle="Kids" disc="Mais Conforto e Segurança para seus Filhos." svg="Kids"/>
