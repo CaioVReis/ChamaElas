@@ -12,7 +12,7 @@ import NavBarFlow from './components/NavBarFlow';
 function App() {
   return (
     <>
-    <div className='PinkRose   md:w-screen md:h-screen'> 
+    <div className='PinkRose w-screen border-2 border-pink-700  md:w-screen md:h-screen'> 
 
     <div>
       <Navbar/>
@@ -22,7 +22,7 @@ function App() {
       <div className='md:w-2/5  h-10 mt-40 ml-10'><TextP/></div>
     
     <div className=' md:w-1/2 h-10   md:ml-96 md:mt-12 '><GifMovie /></div>
-     <div className='md:w-52 h-36 md:-mt-12 ml-2 md:mt-32  mt-10 '>
+     <div className='md:w-52 h-36 md:-mt-12  md:mt-32  mt-10 '>
       <Stores/>
      </div>
    
@@ -38,7 +38,7 @@ function App() {
         < p className=" -ml-52 md:-ml-20 text-gray-500 leading-relaxed font-light text-xl md:mx-auto pb-2">Conheça Todos<br/>Nossos Atendimentos.!</p>
       </header>
      </div>
-     <div className="flex flex-wrap  ml-2  md:-mx-4 text-center">
+     <div className="flex flex-wrap w-screen   md:-mx-4 text-center">
 
   
   <Cards tittle="Kids" disc="Mais Conforto e Segurança para seus Filhos." svg="Kids"/>
@@ -51,11 +51,11 @@ function App() {
      </div>
 
 
-    <div className='md:PinkRose PinkRose h-full md:w-screen md:h-screen md:flex flex flex-col md:flex-row '>
+    <div className='md:PinkRose PinkRose 0 w-screen h-full md:w-screen md:h-screen md:flex flex flex-col md:flex-row '>
         <div className='PinkRose  md:w-3/5 md:h-screen'>
 
        <p className="md:text-5xl text-white md:ml-5 md:mt-10 mt-2 italic font-bold text-center text-2xl  w-screen  h-10 md:block">Quer Conheçer A Nossa Historia?</p>
-          <div className='md:mt-12 mt-3  w-96 md:w-5/6 ml-5 md:ml-10'>
+          <div className='md:mt-12 mt-3 ml-5  w-96 md:w-5/6  md:ml-10'>
             <ImgEqp url="file:///C:/Users/kaio%20vinicios/Desktop/Imagem%20do%20WhatsApp%20de%202023-12-22%20%C3%A0(s)%2014.34.10_d2be136f.jpg" />
           </div>   
         </div>
@@ -64,7 +64,8 @@ function App() {
           
         </div>
       
-           <div className='md:w-full h-28  bg-black flex '>
+           <div className='md:w-full h-28 w-sc border border-black bg-black flex '>
+
 
        <div className=' flex-col md:ml-1 md:w-10'>
         <LogoLinks svg="Whatsapp" />
