@@ -72,7 +72,7 @@ function App() {
               <p className="md:text-5xl text-white   container   italic font-bold text-center text-2xl  h-10 md:mt-10">
                 Quer Conheçer A Nossa Historia?
               </p>
-              <div className="md:mt-12 mt-3 ml-5  w-96 md:w-4/5  ">
+              <div className="md:mt-12 mt-3 pl-3 pr-3   md:w-4/5  ">
                 <ImgEqp url="file:///C:/Users/kaio%20vinicios/Desktop/Imagem%20do%20WhatsApp%20de%202023-12-22%20%C3%A0(s)%2014.34.10_d2be136f.jpg" />
               </div>
               <div className="text-white text-center md:hidden ">
