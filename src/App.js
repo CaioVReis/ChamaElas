@@ -76,63 +76,64 @@ function App() {
                 <ImgEqp url="file:///C:/Users/kaio%20vinicios/Desktop/Imagem%20do%20WhatsApp%20de%202023-12-22%20%C3%A0(s)%2014.34.10_d2be136f.jpg" />
               </div>
               <div className="text-white text-center md:hidden ">
-                Na trajetória rumo à igualdade de gênero e segurança nas
-                viagens, nasceu o aplicativo revolucionário: Chama Elas. Este
-                aplicativo inovador surgiu como resultado da força e
-                determinação das motoristas mulheres que decidiram unir suas
-                vozes e habilidades para criar uma experiência de transporte
-                única e voltada para a segurança de todas as passageiras,
-                incluindo aquelas do grupo LGBTQIA+.
-                <p className="mt-3">
-                  Na trajetória rumo à igualdade de gênero e segurança nas
-                  viagens, nasceu o aplicativo revolucionário: Chama Elas. Este
-                  aplicativo inovador surgiu como resultado da força e
-                  determinação das motoristas mulheres que decidiram unir suas
-                  vozes e habilidades para criar uma experiência de transporte
-                  única e voltada para a segurança de todas as passageiras,
-                  incluindo aquelas do grupo LGBTQIA+.
-                  <p className="mt-3">
-                    Com determinação implacável, as motoristas do Chama Elas se
-                    uniram para criar uma comunidade de motoristas fortes e
-                    empoderadas, que não apenas abraçavam a diversidade, mas a
-                    celebravam. Elas compartilharam histórias de sucesso e
-                    enfrentaram os obstáculos juntas, criando um vínculo que vai
-                    além das estradas. Seu objetivo é fornecer um serviço de
-                    transporte que seja inclusivo e respeite a individualidade
-                    de cada passageira.
-                    <p className="mt-3">
-                      O aplicativo Chama Elas não se limitou a ser apenas um
-                      serviço de transporte; ele se tornou um recurso confiável
-                      para diversas necessidades. Além de atender às
-                      passageiras, o aplicativo expandiu sua oferta para incluir
-                      o transporte seguro de animais de estimação, mulheres
-                      idosas e crianças. Ele também se tornou a solução ideal
-                      para o transporte de compras em supermercados, permitindo
-                      que as mulheres realizem suas tarefas diárias com
-                      facilidade e conveniência.
-                    </p>
-                    <p className="mt-3">
-                      As motoristas do Chama Elas também se dedicam a oferecer
-                      passeios turísticos na cidade de Poços de Caldas,
-                      compartilhando seu conhecimento e amor pela cidade com as
-                      passageiras. E, com sensibilidade e cuidado, elas garantem
-                      que as pessoas com deficiência (PCD) recebam a assistência
-                      necessária durante suas viagens.
-                    </p>
-                  
-                    <p className="mt-3">
-                      O Chama Elas se transformou em um símbolo de empoderamento
-                      feminino, inclusão LGBTQIA+ e solidariedade para todos.
-                      Ele transcendeu o conceito tradicional de transporte e se
-                      tornou uma comunidade que representa a diversidade,
-                      segurança e igualdade. A história do Chama Elas é um
-                      lembrete poderoso de como a união de pessoas determinadas
-                      pode criar um espaço onde todas as identidades são
-                      respeitadas, celebradas e protegidas.
-                    </p>
-                    <p className="mt-3">Chama Elas 💞</p>
-                  </p>
-                </p>
+                <p className="mt-3 pr-1 pl-1">  Na trajetória rumo à igualdade de gênero e segurança nas viagens,
+              nasceu o aplicativo revolucionário: Chama Elas. Este aplicativo
+              inovador surgiu como resultado da força e determinação das
+              motoristas mulheres que decidiram unir suas vozes e habilidades
+              para criar uma experiência de transporte única e voltada para a
+              segurança de todas as passageiras, incluindo aquelas do grupo
+              LGBTQIA+.</p>
+            
+              <p className="mt-3 pr-1 pl-1"> 
+                A história do Chama Elas começou quando um grupo inspirador de
+                motoristas mulheres percebeu que havia uma necessidade latente
+                de oferecer às mulheres e ao grupo LGBTQIA+ um ambiente de
+                viagem mais seguro, onde todos pudessem se sentir protegidos e
+                confiantes. Essas mulheres não apenas enfrentaram os desafios
+                comuns da indústria de transporte, mas também superaram os
+                estereótipos de gênero e lutaram contra a discriminação que
+                muitas vezes atinge a comunidade LGBTQIA+.
+              </p>
+              <p className="mt-3 pr-1 pl-1">
+                Com determinação implacável, as motoristas do Chama Elas se
+                uniram para criar uma comunidade de motoristas fortes e
+                empoderadas, que não apenas abraçavam a diversidade, mas a
+                celebravam. Elas compartilharam histórias de sucesso e
+                enfrentaram os obstáculos juntas, criando um vínculo que vai
+                além das estradas. Seu objetivo é fornecer um serviço de
+                transporte que seja inclusivo e respeite a individualidade de
+                cada passageira.
+              </p>
+              <p className="mt-3 pr-1 pl-1">
+                O aplicativo Chama Elas não se limitou a ser apenas um serviço
+                de transporte; ele se tornou um recurso confiável para diversas
+                necessidades. Além de atender às passageiras, o aplicativo
+                expandiu sua oferta para incluir o transporte seguro de animais
+                de estimação, mulheres idosas e crianças. Ele também se tornou a
+                solução ideal para o transporte de compras em supermercados,
+                permitindo que as mulheres realizem suas tarefas diárias com
+                facilidade e conveniência.
+              </p>
+              <p className="mt-3 pr-1 pl-1">
+                As motoristas do Chama Elas também se dedicam a oferecer
+                passeios turísticos na cidade de Poços de Caldas, compartilhando
+                seu conhecimento e amor pela cidade com as passageiras. E, com
+                sensibilidade e cuidado, elas garantem que as pessoas com
+                deficiência (PCD) recebam a assistência necessária durante suas
+                viagens.
+              </p>
+              
+              <p className="mt-3 pr-1 pl-1">
+                O Chama Elas se transformou em um símbolo de empoderamento
+                feminino, inclusão LGBTQIA+ e solidariedade para todos. Ele
+                transcendeu o conceito tradicional de transporte e se tornou uma
+                comunidade que representa a diversidade, segurança e igualdade.
+                A história do Chama Elas é um lembrete poderoso de como a união
+                de pessoas determinadas pode criar um espaço onde todas as
+                identidades são respeitadas, celebradas e protegidas.
+              </p>
+              <p className="mt-3 pr-1 pl-1">Chama Elas 💞</p>
+                 
               </div>
             </div>
             <div className="mt-2 Container Scrollbar text-sm  md:h-[345px]   pr-5 md:mt-32 md:w-2/5 m-1 md:-ml-28  text-white md:text-sm hidden md:block ">
@@ -143,7 +144,7 @@ function App() {
               para criar uma experiência de transporte única e voltada para a
               segurança de todas as passageiras, incluindo aquelas do grupo
               LGBTQIA+.
-              <p className="md:mt-6">
+              <p className="md:mt-6"> 
                 A história do Chama Elas começou quando um grupo inspirador de
                 motoristas mulheres percebeu que havia uma necessidade latente
                 de oferecer às mulheres e ao grupo LGBTQIA+ um ambiente de
