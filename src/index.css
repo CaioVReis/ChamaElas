@@ -8,3 +8,25 @@
 }
 
 body { overflow-x: hidden; }
+
+.Container {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+
+
+
+.Scrollbar::-webkit-scrollbar{
+  width: 12px;  
+}
+
+.Scrollbar::-webkit-scrollbar-track{
+  background:  #FF1493; 
+}
+
+.Scrollbar::-webkit-scrollbar-thumb {
+  background-color: pink;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid white;  /* creates padding around scroll thumb */
+}
