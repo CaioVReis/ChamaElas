@@ -13,6 +13,11 @@ body { overflow-x: hidden; }
   height: 300px;
   overflow-y: scroll;
 }
+.container{
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
 
 
 

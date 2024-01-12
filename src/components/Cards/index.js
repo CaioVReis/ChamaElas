@@ -3,7 +3,7 @@ import Icon from "../icons"
 
 const Cards=({tittle,disc,svg})=>{
     return(
-         <div className="flex-shrink     w-full      " data-wow-duration="1s" >
+         <div className="flex-shrink mt-6 pr-2 pl-2    w-full      " data-wow-duration="1s" >
 
  
 
