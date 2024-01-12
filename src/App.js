@@ -17,7 +17,7 @@ function App() {
           <Navbar />
           <NavBarFlow />
         </div>
-        <div className="md:w-screen container md:h-full flex flex-col">
+        <div className="md:w-screen   md:h-full flex flex-col">
           <div className="md:w-2/5  h-10 mt-40 ml-10">
             <TextP />
           </div>
@@ -69,7 +69,7 @@ function App() {
         <div className="container">
           <div className="md:PinkRose mt-5 md:mt-5 md:flex flex flex-col md:flex-row mb-7">
             <div className="PinkRose  md:w-3/5 ">
-              <p className="md:text-5xl text-white   container   italic font-bold text-center text-2xl  h-10 md:mt-10">
+              <p className="md:text-5xl text-white   container mt-5  italic font-bold text-center text-2xl  h-10 md:mt-10">
                 Quer Conheçer A Nossa Historia?
               </p>
               <div className="md:mt-12 mt-3 pl-3 pr-3   md:w-4/5  ">
