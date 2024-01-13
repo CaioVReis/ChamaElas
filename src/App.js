@@ -17,15 +17,15 @@ function App() {
           <Navbar />
           <NavBarFlow />
         </div>
-        <div className="md:w-screen   md:h-full flex flex-col">
-          <div className="md:w-2/5  h-10 mt-40 ml-10">
+        <div className="md:w-screen container  md:h-full flex flex-col">
+          <div className="md:w-2/5  h-10 mt-40 ">
             <TextP />
           </div>
 
-          <div className=" md:w-1/2 h-10   md:ml-96 md:mt-12 ">
+          <div className=" md:w-3/5 h-10    md:ml-96 md:mt-12 ">
             <GifMovie />
           </div>
-          <div className="md:w-52  h-36 md:-mt-12  md:mt-32  mt-10 ">
+          <div className="md:w-52  h-36    mt-10 ">
             <Stores />
           </div>
         </div>

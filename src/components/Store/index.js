@@ -6,7 +6,7 @@ const Stores=()=>{
     return(
 
          <div>
-           <div className=" md:ml-10 md:flex  justify-center flex mt-10 md:size-96 gap-5   ">
+           <div className=" md:flex  justify-center flex mt-10 md:size-96 gap-5   ">
                 <a href="https://apps.apple.com/br/app/chama-elas-passageira/id6450562015" target="_blank" tittle="AppleStore"  >
                     <Icon icon="AppleStore"/>
                 </a>
