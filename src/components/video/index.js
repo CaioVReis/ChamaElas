@@ -6,7 +6,7 @@ const GifMovie=()=>{
     return(
 
         
-            <video className="md:ml-64 w-4/5 ml-9  rounded-lg -mt-32" autoPlay src={Spinner} muted loop  ></video>
+            <video className="rounded-lg " autoPlay src={Spinner} muted loop  ></video>
     )
 }
 

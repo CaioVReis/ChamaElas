@@ -18,7 +18,7 @@ const NavBarFlow = () => {
             <a href="#"><p className="absolute  right-5 text-center text-lg p-2 h-10 mt-2  bg-pink-300 rounded-md text-white">Seja Motorista</p></a>
         </div>
         { isOpen  && (
-            <div className=" md:w-full    w-screen ml-8  PinkRose flex flex-col p-2 gap-5">
+            <div className=" md:w-full  w-screen ml-8  PinkRose flex flex-col p-2 gap-5">
         <div className="font-bold text-center text-3xl text-white antialiased hover:text-pink-400">
           <a href="#/">Home</a>
         </div>

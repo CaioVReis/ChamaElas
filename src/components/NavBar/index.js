@@ -2,17 +2,17 @@ import NavItem, { NavDrive } from "../NavItens";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-20  hidden md:w-full  md:block md:h-[30px]">
-    <div className="  md:flex PinkRose md:flex-row hidden md:block ">
-      <div className="mt-1 ml-5">
+    <div className="fixed z-20 PinkRose hidden md:w-full  md:block ">
+    <div className=" md:flex container md:flex-row hidden md:justify-between">
+      <div className="mt-[6px]">
         <div className="font-bold   text-2xl text-white antialiased">
           <a href="#/">Chama</a>
         </div>
-        <div className="font-bold ml-16 -mt-3 text-2xl text-white antialiased">
+        <div className="font-bold text-2xl text-white antialiased text-right -mt-3 ml-16">
           <a href="#/">Elas</a>
         </div>
       </div>
-      <div className="flex gap-20 ml-52  ">
+      <div className="flex gap-20 ">
         <NavItem href="#home" tittle="Home" />
         <NavItem href="#tuor" tittle="Tuor Poços" />
         <NavItem href="#publicidade" tittle="Publicidade" />

@@ -17,30 +17,33 @@ function App() {
           <Navbar />
           <NavBarFlow />
         </div>
-        <div className="md:w-screen container  md:h-full flex flex-col">
-          <div className="md:w-2/5  h-10 mt-40 ">
-            <TextP />
+        <div className="container flex md:flex-row md:pt-40 md:pb-8 flex-col-reverse pt-20">
+          <div className="md:flex md:flex-col md:justify-between">
+            <section>
+              <TextP />
+            </section>
+            <section>
+              <Stores />
+            </section>
           </div>
 
-          <div className=" md:w-3/5 h-10    md:ml-96 md:mt-12 ">
+          <div className="md:w-[85%] md:px-0 px-4">
             <GifMovie />
           </div>
-          <div className="md:w-52  h-36    mt-10 ">
-            <Stores />
-          </div>
+
         </div>
       </div>
 
-      <div className="container">
-        <div className="md:mt-10  mt-16  ">
-          <h2 className="text-center font-bold">Atendimento Exclusivo!</h2>
-          <p className="text-center font-semibold">
+      <div className="container mt-8 mb-10">
+        <div className="">
+          <h2 className="text-center mb-2 tex font-bold md:text-3xl text-2xl uppercase italic">Atendimento Exclusivo!</h2>
+          <p className="text-center italic text-xl font-semibold mb-6">
             Conheça Todos
             <br />
             Nossos Atendimentos.!
           </p>
         </div>
-        <div className="md:grid md:grid-cols-3 md:gap-4      md:-mx-4 text-center">
+        <div className="md:grid md:grid-cols-3 gap-4 text-center flex flex-col">
           <Cards
             tittle="Kids"
             disc="Mais Conforto e Segurança para seus Filhos."
@@ -67,7 +70,7 @@ function App() {
       </div>
       <div className="PinkRose">
         <div className="container">
-          <div className="md:PinkRose mt-5 md:mt-5 md:flex flex flex-col md:flex-row mb-7">
+          <div className="md:PinkRose md:flex flex flex-col md:flex-row mb-7">
             <div className="PinkRose  md:w-3/5 ">
               <p className="md:text-5xl text-white   container mt-5  italic font-bold text-center text-2xl  h-10 md:mt-10">
                 Quer Conheçer A Nossa Historia?

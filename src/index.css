@@ -4,7 +4,8 @@
 
 
 .PinkRose{
-  background-color: #FF1493;
+  background-image: linear-gradient(to right bottom, #d1184e, #d41a50, #d81c53, #db1e55, #df2058);
+  background: #FF1493;
 }
 
 body { overflow-x: hidden; }
@@ -19,7 +20,9 @@ body { overflow-x: hidden; }
 }
 
 
-
+.color-card-text{
+  color: #45474A;
+}
 
 
 .Scrollbar::-webkit-scrollbar{
