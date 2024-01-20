@@ -13,9 +13,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex gap-20 ">
-        <NavItem href="#home" tittle="Home" />
+        {/* <NavItem href="#home" tittle="Home" />
         <NavItem href="#tuor" tittle="Tuor Poços" />
-        <NavItem href="#publicidade" tittle="Publicidade" />
+        <NavItem href="#publicidade" tittle="Publicidade" /> */}
       </div>
       <div className="">
         <NavDrive
