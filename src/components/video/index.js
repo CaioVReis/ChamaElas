@@ -2,11 +2,11 @@
 import Spinner from "../video/ChamaElas.mp4"
 
 
-const GifMovie=()=>{
+const GifMovie=({url})=>{
     return(
 
         
-            <video className="rounded-lg " autoPlay src={Spinner} muted loop  ></video>
+            <video className="rounded-lg " autoPlay src={url} muted loop  ></video>
     )
 }
 

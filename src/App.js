@@ -1,3 +1,4 @@
+import { Parser }  from 'html-to-react'; //tranformar HTML em Reactjs para ler
 import { Navbar } from "./components/NavBar";
 import "./App.css";
 import { GifMovie } from "./components/video";
@@ -8,8 +9,55 @@ import ImgEqp from "./ImgEquipe";
 import { LogoLinks } from "./Logos";
 import { LogoCE } from "./components/ChamaELasLg";
 import NavBarFlow from "./components/NavBarFlow";
+import { useEffect, useState } from "react";
+import { Products , Content} from "./store";
 
 function App() {
+  const htmlToReactParser = new Parser() //Transformando HTML em React
+  const [products,setProducts] = useState([])
+  const [data , setData] = useState({ //criaçao de objetos.
+    banner: "",
+    video_url: "",
+    historia_desktop: "",
+    historia_mobile:"",
+  })
+
+  useEffect(()=>{
+     featchData()         //ambos efeitos criados para transcrever "String in arrays" .
+     featchDataContent()  //ambos efeitos criados para transcrever "String in arrays" .
+  },[])
+
+
+  const featchData = async () =>{//funçao syncrona com Products
+    const res = await Products()
+    const data =  JSON.parse(res.data.Data)
+    setProducts(data)
+  }
+
+  const featchDataContent = async () =>{//funçao syncrona com content
+    const res = await Content()
+    const content = JSON.parse(res.data.Data)
+
+    const banner_text = content.find(c => c.name === "banner_text")
+    const video_url = content.find( c => c.name === "video_url")
+    const historia_desktop = content.find(c => c.name === "historia_desktop")
+    const historia_mobile = content.find(c => c.name === "historia_mobile")
+
+  
+
+    setData({ //utilizaçao para pegar valor da API /ID/NAME/VALUE
+     
+      banner: banner_text.value,
+      video_url: video_url.value,
+      historia_desktop: historia_desktop.value,
+      historia_mobile:historia_mobile.value,
+    })
+
+  
+  }
+
+ 
+
   return (
     <>
       <div className="PinkRose">
@@ -20,7 +68,7 @@ function App() {
         <div className="container flex md:flex-row md:pt-40 md:pb-8 flex-col-reverse pt-20">
           <div className="md:flex md:flex-col md:justify-between">
             <section>
-              <TextP />
+              <TextP text={data.banner}/>
             </section>
             <section>
               <Stores />
@@ -28,7 +76,7 @@ function App() {
           </div>
 
           <div className="md:w-[85%] md:px-0 px-4">
-            <GifMovie />
+          <GifMovie url={data.video_url}/> 
           </div>
 
         </div>
@@ -44,28 +92,16 @@ function App() {
           </p>
         </div>
         <div className="md:grid md:grid-cols-3 gap-4 text-center flex flex-col">
-          <Cards
-            tittle="Kids"
-            disc="Mais Conforto e Segurança para seus Filhos."
-            svg="Kids"
-          />
-          <Cards
-            tittle="Mercado"
-            disc="Levamos sua compra no mercado o Mais rapido ate voce"
-            svg="Mercado"
-          />
-          <Cards
-            tittle="Pets"
-            disc="Precisa Levar Seu Animal de estimaçao para algum lugar?"
-            svg="Pets"
-          />
-          <Cards tittle="PCD" disc="Pessoas com deficiencia" svg="PCD" />
-          <Cards tittle="LGBTQIA+" disc="LBGTQIA+" svg="LGBTQIA+" />
-          <Cards
-            tittle="Tuor"
-            disc="Tuor Poços de Caldas Conheça Nossa Linda cidade da melhor forma!"
-            svg="Tuor"
-          />
+          {
+            products.map(p =>  //mapeando dados API
+                  <Cards
+                  tittle={p.name}
+                  disc={p.description}
+                  svg={p.icon}
+                />
+              )
+          }
+       
         </div>
       </div>
       <div className="PinkRose">
@@ -79,123 +115,12 @@ function App() {
                 <ImgEqp url="file:///C:/Users/kaio%20vinicios/Desktop/Imagem%20do%20WhatsApp%20de%202023-12-22%20%C3%A0(s)%2014.34.10_d2be136f.jpg" />
               </div>
               <div className="text-white text-center md:hidden ">
-                <p className="mt-3 pr-1 pl-1">  Na trajetória rumo à igualdade de gênero e segurança nas viagens,
-              nasceu o aplicativo revolucionário: Chama Elas. Este aplicativo
-              inovador surgiu como resultado da força e determinação das
-              motoristas mulheres que decidiram unir suas vozes e habilidades
-              para criar uma experiência de transporte única e voltada para a
-              segurança de todas as passageiras, incluindo aquelas do grupo
-              LGBTQIA+.</p>
-            
-              <p className="mt-3 pr-1 pl-1"> 
-                A história do Chama Elas começou quando um grupo inspirador de
-                motoristas mulheres percebeu que havia uma necessidade latente
-                de oferecer às mulheres e ao grupo LGBTQIA+ um ambiente de
-                viagem mais seguro, onde todos pudessem se sentir protegidos e
-                confiantes. Essas mulheres não apenas enfrentaram os desafios
-                comuns da indústria de transporte, mas também superaram os
-                estereótipos de gênero e lutaram contra a discriminação que
-                muitas vezes atinge a comunidade LGBTQIA+.
-              </p>
-              <p className="mt-3 pr-1 pl-1">
-                Com determinação implacável, as motoristas do Chama Elas se
-                uniram para criar uma comunidade de motoristas fortes e
-                empoderadas, que não apenas abraçavam a diversidade, mas a
-                celebravam. Elas compartilharam histórias de sucesso e
-                enfrentaram os obstáculos juntas, criando um vínculo que vai
-                além das estradas. Seu objetivo é fornecer um serviço de
-                transporte que seja inclusivo e respeite a individualidade de
-                cada passageira.
-              </p>
-              <p className="mt-3 pr-1 pl-1">
-                O aplicativo Chama Elas não se limitou a ser apenas um serviço
-                de transporte; ele se tornou um recurso confiável para diversas
-                necessidades. Além de atender às passageiras, o aplicativo
-                expandiu sua oferta para incluir o transporte seguro de animais
-                de estimação, mulheres idosas e crianças. Ele também se tornou a
-                solução ideal para o transporte de compras em supermercados,
-                permitindo que as mulheres realizem suas tarefas diárias com
-                facilidade e conveniência.
-              </p>
-              <p className="mt-3 pr-1 pl-1">
-                As motoristas do Chama Elas também se dedicam a oferecer
-                passeios turísticos na cidade de Poços de Caldas, compartilhando
-                seu conhecimento e amor pela cidade com as passageiras. E, com
-                sensibilidade e cuidado, elas garantem que as pessoas com
-                deficiência (PCD) recebam a assistência necessária durante suas
-                viagens.
-              </p>
-              
-              <p className="mt-3 pr-1 pl-1">
-                O Chama Elas se transformou em um símbolo de empoderamento
-                feminino, inclusão LGBTQIA+ e solidariedade para todos. Ele
-                transcendeu o conceito tradicional de transporte e se tornou uma
-                comunidade que representa a diversidade, segurança e igualdade.
-                A história do Chama Elas é um lembrete poderoso de como a união
-                de pessoas determinadas pode criar um espaço onde todas as
-                identidades são respeitadas, celebradas e protegidas.
-              </p>
-              <p className="mt-3 pr-1 pl-1">Chama Elas 💞</p>
+              { htmlToReactParser.parse(data.historia_mobile)}
                  
               </div>
             </div>
             <div className="mt-2 Container Scrollbar text-sm  md:h-[345px]   pr-5 md:mt-32 md:w-2/5 m-1 md:-ml-28  text-white md:text-sm hidden md:block ">
-              Na trajetória rumo à igualdade de gênero e segurança nas viagens,
-              nasceu o aplicativo revolucionário: Chama Elas. Este aplicativo
-              inovador surgiu como resultado da força e determinação das
-              motoristas mulheres que decidiram unir suas vozes e habilidades
-              para criar uma experiência de transporte única e voltada para a
-              segurança de todas as passageiras, incluindo aquelas do grupo
-              LGBTQIA+.
-              <p className="md:mt-6"> 
-                A história do Chama Elas começou quando um grupo inspirador de
-                motoristas mulheres percebeu que havia uma necessidade latente
-                de oferecer às mulheres e ao grupo LGBTQIA+ um ambiente de
-                viagem mais seguro, onde todos pudessem se sentir protegidos e
-                confiantes. Essas mulheres não apenas enfrentaram os desafios
-                comuns da indústria de transporte, mas também superaram os
-                estereótipos de gênero e lutaram contra a discriminação que
-                muitas vezes atinge a comunidade LGBTQIA+.
-              </p>
-              <p className="md:mt-6">
-                Com determinação implacável, as motoristas do Chama Elas se
-                uniram para criar uma comunidade de motoristas fortes e
-                empoderadas, que não apenas abraçavam a diversidade, mas a
-                celebravam. Elas compartilharam histórias de sucesso e
-                enfrentaram os obstáculos juntas, criando um vínculo que vai
-                além das estradas. Seu objetivo é fornecer um serviço de
-                transporte que seja inclusivo e respeite a individualidade de
-                cada passageira.
-              </p>
-              <p className="md:mt-6">
-                O aplicativo Chama Elas não se limitou a ser apenas um serviço
-                de transporte; ele se tornou um recurso confiável para diversas
-                necessidades. Além de atender às passageiras, o aplicativo
-                expandiu sua oferta para incluir o transporte seguro de animais
-                de estimação, mulheres idosas e crianças. Ele também se tornou a
-                solução ideal para o transporte de compras em supermercados,
-                permitindo que as mulheres realizem suas tarefas diárias com
-                facilidade e conveniência.
-              </p>
-              <p className="mt-6">
-                As motoristas do Chama Elas também se dedicam a oferecer
-                passeios turísticos na cidade de Poços de Caldas, compartilhando
-                seu conhecimento e amor pela cidade com as passageiras. E, com
-                sensibilidade e cuidado, elas garantem que as pessoas com
-                deficiência (PCD) recebam a assistência necessária durante suas
-                viagens.
-              </p>
-              <p className="mt-6"></p>
-              <p className="mt-6">
-                O Chama Elas se transformou em um símbolo de empoderamento
-                feminino, inclusão LGBTQIA+ e solidariedade para todos. Ele
-                transcendeu o conceito tradicional de transporte e se tornou uma
-                comunidade que representa a diversidade, segurança e igualdade.
-                A história do Chama Elas é um lembrete poderoso de como a união
-                de pessoas determinadas pode criar um espaço onde todas as
-                identidades são respeitadas, celebradas e protegidas.
-              </p>
-              <p className="mt-6">Chama Elas 💞</p>
+           { htmlToReactParser.parse(data.historia_desktop)}
             </div>
           </div>
          
